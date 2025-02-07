@@ -13,7 +13,11 @@ export default function Home() {
             user={loggednIn?.firstName || "Guest"}
             subtext="Access and manage your account and trnsactions"
           />
-          <TotalBalanceBox />
+          <TotalBalanceBox
+            accounts={[]}
+            totalBanks={3}
+            totalCurrentBalance={1250.35}
+          />
         </header>
       </div>
     </section>
