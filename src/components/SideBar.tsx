@@ -6,6 +6,7 @@ import { sidebarLinks } from "../../constants";
 import { usePathname } from "next/navigation";
 import { cn } from "../../lib/utils";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const SideBar = ({ user }: SiderbarProps) => {
   const pathName = usePathname();
   return (

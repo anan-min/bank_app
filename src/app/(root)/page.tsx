@@ -1,8 +1,15 @@
 import HeaderBox from "@/components/HeaderBox";
 import TotalBalanceBox from "@/components/TotalBalanceBox";
+import RightSideBar from "@/components/RightSideBar";
+import Link from "next/link";
 
 export default function Home() {
-  const loggednIn = { firstName: "Anan" };
+  const loggednIn = {
+    firstName: "Anan",
+    lastName: "MMP",
+    email: "nut999anan@gmail.com",
+  };
+
   return (
     <section className="home">
       <div className="home-content">
@@ -20,6 +27,11 @@ export default function Home() {
           />
         </header>
       </div>
+      <RightSideBar
+        user={loggednIn}
+        transactions={[]}
+        banks={[{ currentBalance: 12123.5 }, { currentBalance: 5234.5 }]}
+      />
     </section>
   );
 }
